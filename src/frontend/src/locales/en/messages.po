@@ -522,7 +522,7 @@ msgstr "Selection Lists"
 #: src/states/IconState.tsx:46
 #: src/states/IconState.tsx:76
 #: src/tables/InvenTreeTableHeader.tsx:125
-#: src/tables/bom/BomTable.tsx:537
+#: src/tables/bom/BomTable.tsx:550
 #: src/tables/settings/EmailTable.tsx:109
 #: src/tables/stock/StockItemTestResultTable.tsx:335
 msgid "Error"
@@ -640,7 +640,7 @@ msgstr "Barcode does not match the expected model type"
 #: src/components/editors/NotesEditor.tsx:118
 #: src/components/forms/ApiForm.tsx:451
 #: src/pages/Index/Settings/AdminCenter/CurrencyManagementPanel.tsx:45
-#: src/tables/bom/BomTable.tsx:528
+#: src/tables/bom/BomTable.tsx:541
 #: src/tables/settings/PendingTasksTable.tsx:68
 msgid "Success"
 msgstr "Success"
@@ -2508,7 +2508,7 @@ msgstr "Logout"
 #~ msgstr "Pages"
 
 #: src/components/nav/NavigationDrawer.tsx:84
-#: src/components/render/Part.tsx:33
+#: src/components/render/Part.tsx:36
 #: src/defaults/links.tsx:42
 #: src/forms/StockForms.tsx:736
 #: src/pages/Index/Settings/SystemSettings.tsx:224
@@ -2884,21 +2884,28 @@ msgid "Inactive"
 msgstr "Inactive"
 
 #: src/components/render/Part.tsx:31
-#: src/tables/bom/BomTable.tsx:294
+#: src/tables/part/PartTable.tsx:274
+#: src/tables/part/PartTable.tsx:278
+#: src/tables/part/PartVariantTable.tsx:25
+msgid "Virtual"
+msgstr "Virtual"
+
+#: src/components/render/Part.tsx:34
+#: src/tables/bom/BomTable.tsx:300
 #: src/tables/part/PartTable.tsx:145
 msgid "No stock"
 msgstr "No stock"
 
-#: src/components/render/Part.tsx:44
+#: src/components/render/Part.tsx:47
 #: src/pages/company/SupplierPartDetail.tsx:196
 #: src/pages/company/SupplierPartDetail.tsx:389
 #: src/pages/part/PartDetail.tsx:1018
-#: src/tables/bom/BomTable.tsx:424
+#: src/tables/bom/BomTable.tsx:437
 #: src/tables/part/PartTable.tsx:101
 msgid "On Order"
 msgstr "On Order"
 
-#: src/components/render/Part.tsx:52
+#: src/components/render/Part.tsx:55
 #: src/pages/part/PartDetail.tsx:590
 #: src/pages/part/PartDetail.tsx:1024
 #: src/pages/stock/StockDetail.tsx:912
@@ -2907,12 +2914,12 @@ msgstr "On Order"
 msgid "In Production"
 msgstr "In Production"
 
-#: src/components/render/Part.tsx:71
+#: src/components/render/Part.tsx:74
 #: src/tables/stock/StockTrackingTable.tsx:206
 msgid "Details"
 msgstr "Details"
 
-#: src/components/render/Part.tsx:109
+#: src/components/render/Part.tsx:112
 #: src/pages/part/PartDetail.tsx:490
 #: src/tables/ColumnRenderers.tsx:224
 #: src/tables/ColumnRenderers.tsx:233
@@ -6308,8 +6315,8 @@ msgstr "Build Quantity"
 
 #: src/pages/build/BuildDetail.tsx:286
 #: src/pages/part/PartDetail.tsx:601
-#: src/tables/bom/BomTable.tsx:352
-#: src/tables/bom/BomTable.tsx:387
+#: src/tables/bom/BomTable.tsx:358
+#: src/tables/bom/BomTable.tsx:400
 msgid "Can Build"
 msgstr "Can Build"
 
@@ -7030,7 +7037,7 @@ msgid "Keywords"
 msgstr "Keywords"
 
 #: src/pages/part/PartDetail.tsx:545
-#: src/tables/bom/BomTable.tsx:419
+#: src/tables/bom/BomTable.tsx:432
 #: src/tables/build/BuildLineTable.tsx:297
 #: src/tables/part/PartTable.tsx:312
 #: src/tables/sales/SalesOrderLineItemTable.tsx:136
@@ -7038,7 +7045,7 @@ msgid "Available Stock"
 msgstr "Available Stock"
 
 #: src/pages/part/PartDetail.tsx:551
-#: src/tables/bom/BomTable.tsx:328
+#: src/tables/bom/BomTable.tsx:334
 #: src/tables/build/BuildLineTable.tsx:259
 #: src/tables/sales/SalesOrderLineItemTable.tsx:178
 msgid "On order"
@@ -7075,7 +7082,7 @@ msgid "Template Part"
 msgstr "Template Part"
 
 #: src/pages/part/PartDetail.tsx:634
-#: src/tables/bom/BomTable.tsx:409
+#: src/tables/bom/BomTable.tsx:422
 msgid "Assembled Part"
 msgstr "Assembled Part"
 
@@ -7084,12 +7091,12 @@ msgid "Component Part"
 msgstr "Component Part"
 
 #: src/pages/part/PartDetail.tsx:644
-#: src/tables/bom/BomTable.tsx:399
+#: src/tables/bom/BomTable.tsx:412
 msgid "Testable Part"
 msgstr "Testable Part"
 
 #: src/pages/part/PartDetail.tsx:650
-#: src/tables/bom/BomTable.tsx:404
+#: src/tables/bom/BomTable.tsx:417
 msgid "Trackable Part"
 msgstr "Trackable Part"
 
@@ -7104,7 +7111,7 @@ msgstr "Saleable Part"
 #: src/pages/part/PartDetail.tsx:666
 #: src/pages/part/PartDetail.tsx:1036
 #: src/tables/bom/BomTable.tsx:143
-#: src/tables/bom/BomTable.tsx:414
+#: src/tables/bom/BomTable.tsx:427
 msgid "Virtual Part"
 msgstr "Virtual Part"
 
@@ -8133,7 +8140,7 @@ msgid "Part is not active"
 msgstr "Part is not active"
 
 #: src/tables/ColumnRenderers.tsx:64
-#: src/tables/bom/BomTable.tsx:629
+#: src/tables/bom/BomTable.tsx:642
 #: src/tables/part/PartParameterTable.tsx:235
 #: src/tables/part/PartTestTemplateTable.tsx:258
 msgid "Part is Locked"
@@ -8556,26 +8563,33 @@ msgstr "This BOM item has not been validated"
 msgid "Substitutes"
 msgstr "Substitutes"
 
+#: src/tables/bom/BomTable.tsx:295
+#: src/tables/sales/SalesOrderLineItemTable.tsx:139
+#: src/tables/sales/SalesOrderLineItemTable.tsx:197
+#: src/tables/sales/SalesOrderLineItemTable.tsx:214
+msgid "Virtual part"
+msgstr "Virtual part"
+
 #: src/tables/bom/BomTable.tsx:301
 #~ msgid "Create BOM Item"
 #~ msgstr "Create BOM Item"
 
-#: src/tables/bom/BomTable.tsx:302
+#: src/tables/bom/BomTable.tsx:308
 #: src/tables/build/BuildLineTable.tsx:268
 #: src/tables/part/PartTable.tsx:138
 msgid "External stock"
 msgstr "External stock"
 
 #: src/tables/bom/BomTable.tsx:310
+#~ msgid "Show asssmbled items"
+#~ msgstr "Show asssmbled items"
+
+#: src/tables/bom/BomTable.tsx:316
 #: src/tables/build/BuildLineTable.tsx:231
 msgid "Includes substitute stock"
 msgstr "Includes substitute stock"
 
-#: src/tables/bom/BomTable.tsx:310
-#~ msgid "Show asssmbled items"
-#~ msgstr "Show asssmbled items"
-
-#: src/tables/bom/BomTable.tsx:319
+#: src/tables/bom/BomTable.tsx:325
 #: src/tables/build/BuildLineTable.tsx:241
 #: src/tables/sales/SalesOrderLineItemTable.tsx:164
 msgid "Includes variant stock"
@@ -8589,17 +8603,10 @@ msgstr "Includes variant stock"
 #~ msgid "Bom item updated"
 #~ msgstr "Bom item updated"
 
-#: src/tables/bom/BomTable.tsx:336
+#: src/tables/bom/BomTable.tsx:342
 #: src/tables/part/PartTable.tsx:107
 msgid "Building"
 msgstr "Building"
-
-#: src/tables/bom/BomTable.tsx:345
-#: src/tables/part/PartTable.tsx:164
-#: src/tables/sales/SalesOrderLineItemTable.tsx:187
-#: src/tables/stock/StockItemTable.tsx:224
-msgid "Stock Information"
-msgstr "Stock Information"
 
 #: src/tables/bom/BomTable.tsx:348
 #~ msgid "Delete Bom Item"
@@ -8610,6 +8617,13 @@ msgstr "Stock Information"
 #~ msgstr "Bom item deleted"
 
 #: src/tables/bom/BomTable.tsx:351
+#: src/tables/part/PartTable.tsx:164
+#: src/tables/sales/SalesOrderLineItemTable.tsx:187
+#: src/tables/stock/StockItemTable.tsx:224
+msgid "Stock Information"
+msgstr "Stock Information"
+
+#: src/tables/bom/BomTable.tsx:351
 #~ msgid "Are you sure you want to remove this BOM item?"
 #~ msgstr "Are you sure you want to remove this BOM item?"
 
@@ -8617,149 +8631,149 @@ msgstr "Stock Information"
 #~ msgid "Validate BOM line"
 #~ msgstr "Validate BOM line"
 
-#: src/tables/bom/BomTable.tsx:379
+#: src/tables/bom/BomTable.tsx:392
 #: src/tables/build/BuildLineTable.tsx:478
 #: src/tables/build/BuildLineTable.tsx:519
 msgid "Consumable item"
 msgstr "Consumable item"
 
-#: src/tables/bom/BomTable.tsx:382
+#: src/tables/bom/BomTable.tsx:395
 msgid "No available stock"
 msgstr "No available stock"
 
-#: src/tables/bom/BomTable.tsx:400
+#: src/tables/bom/BomTable.tsx:413
 #: src/tables/build/BuildLineTable.tsx:211
 msgid "Show testable items"
 msgstr "Show testable items"
 
-#: src/tables/bom/BomTable.tsx:405
+#: src/tables/bom/BomTable.tsx:418
 msgid "Show trackable items"
 msgstr "Show trackable items"
 
-#: src/tables/bom/BomTable.tsx:410
+#: src/tables/bom/BomTable.tsx:423
 #: src/tables/build/BuildLineTable.tsx:206
 msgid "Show assembled items"
 msgstr "Show assembled items"
 
-#: src/tables/bom/BomTable.tsx:415
+#: src/tables/bom/BomTable.tsx:428
 msgid "Show virtual items"
 msgstr "Show virtual items"
 
-#: src/tables/bom/BomTable.tsx:420
+#: src/tables/bom/BomTable.tsx:433
 #: src/tables/build/BuildLineTable.tsx:191
 msgid "Show items with available stock"
 msgstr "Show items with available stock"
 
-#: src/tables/bom/BomTable.tsx:425
+#: src/tables/bom/BomTable.tsx:438
 msgid "Show items on order"
 msgstr "Show items on order"
 
-#: src/tables/bom/BomTable.tsx:429
+#: src/tables/bom/BomTable.tsx:442
 msgid "Validated"
 msgstr "Validated"
 
-#: src/tables/bom/BomTable.tsx:430
+#: src/tables/bom/BomTable.tsx:443
 msgid "Show validated items"
 msgstr "Show validated items"
 
-#: src/tables/bom/BomTable.tsx:434
+#: src/tables/bom/BomTable.tsx:447
 #: src/tables/bom/UsedInTable.tsx:80
 msgid "Inherited"
 msgstr "Inherited"
 
-#: src/tables/bom/BomTable.tsx:435
+#: src/tables/bom/BomTable.tsx:448
 #: src/tables/bom/UsedInTable.tsx:81
 msgid "Show inherited items"
 msgstr "Show inherited items"
 
-#: src/tables/bom/BomTable.tsx:439
+#: src/tables/bom/BomTable.tsx:452
 msgid "Allow Variants"
 msgstr "Allow Variants"
 
-#: src/tables/bom/BomTable.tsx:440
+#: src/tables/bom/BomTable.tsx:453
 msgid "Show items which allow variant substitution"
 msgstr "Show items which allow variant substitution"
 
-#: src/tables/bom/BomTable.tsx:444
+#: src/tables/bom/BomTable.tsx:457
 #: src/tables/bom/UsedInTable.tsx:85
 #: src/tables/build/BuildLineTable.tsx:200
 msgid "Optional"
 msgstr "Optional"
 
-#: src/tables/bom/BomTable.tsx:445
+#: src/tables/bom/BomTable.tsx:458
 #: src/tables/bom/UsedInTable.tsx:86
 msgid "Show optional items"
 msgstr "Show optional items"
 
-#: src/tables/bom/BomTable.tsx:449
+#: src/tables/bom/BomTable.tsx:462
 #: src/tables/build/BuildLineTable.tsx:195
 msgid "Consumable"
 msgstr "Consumable"
 
-#: src/tables/bom/BomTable.tsx:450
+#: src/tables/bom/BomTable.tsx:463
 msgid "Show consumable items"
 msgstr "Show consumable items"
 
-#: src/tables/bom/BomTable.tsx:454
+#: src/tables/bom/BomTable.tsx:467
 #: src/tables/part/PartTable.tsx:306
 msgid "Has Pricing"
 msgstr "Has Pricing"
 
-#: src/tables/bom/BomTable.tsx:455
+#: src/tables/bom/BomTable.tsx:468
 msgid "Show items with pricing"
 msgstr "Show items with pricing"
 
-#: src/tables/bom/BomTable.tsx:477
-#: src/tables/bom/BomTable.tsx:606
+#: src/tables/bom/BomTable.tsx:490
+#: src/tables/bom/BomTable.tsx:619
 msgid "Import BOM Data"
 msgstr "Import BOM Data"
 
-#: src/tables/bom/BomTable.tsx:487
-#: src/tables/bom/BomTable.tsx:613
+#: src/tables/bom/BomTable.tsx:500
+#: src/tables/bom/BomTable.tsx:626
 msgid "Add BOM Item"
 msgstr "Add BOM Item"
 
-#: src/tables/bom/BomTable.tsx:492
+#: src/tables/bom/BomTable.tsx:505
 msgid "BOM item created"
 msgstr "BOM item created"
 
-#: src/tables/bom/BomTable.tsx:499
+#: src/tables/bom/BomTable.tsx:512
 msgid "Edit BOM Item"
 msgstr "Edit BOM Item"
 
-#: src/tables/bom/BomTable.tsx:501
+#: src/tables/bom/BomTable.tsx:514
 msgid "BOM item updated"
 msgstr "BOM item updated"
 
-#: src/tables/bom/BomTable.tsx:508
+#: src/tables/bom/BomTable.tsx:521
 msgid "Delete BOM Item"
 msgstr "Delete BOM Item"
 
-#: src/tables/bom/BomTable.tsx:509
+#: src/tables/bom/BomTable.tsx:522
 msgid "BOM item deleted"
 msgstr "BOM item deleted"
 
-#: src/tables/bom/BomTable.tsx:529
+#: src/tables/bom/BomTable.tsx:542
 msgid "BOM item validated"
 msgstr "BOM item validated"
 
-#: src/tables/bom/BomTable.tsx:538
+#: src/tables/bom/BomTable.tsx:551
 msgid "Failed to validate BOM item"
 msgstr "Failed to validate BOM item"
 
-#: src/tables/bom/BomTable.tsx:550
+#: src/tables/bom/BomTable.tsx:563
 msgid "View BOM"
 msgstr "View BOM"
 
-#: src/tables/bom/BomTable.tsx:561
+#: src/tables/bom/BomTable.tsx:574
 msgid "Validate BOM Line"
 msgstr "Validate BOM Line"
 
-#: src/tables/bom/BomTable.tsx:580
+#: src/tables/bom/BomTable.tsx:593
 msgid "Edit Substitutes"
 msgstr "Edit Substitutes"
 
-#: src/tables/bom/BomTable.tsx:634
+#: src/tables/bom/BomTable.tsx:647
 msgid "Bill of materials cannot be edited, as the part is locked"
 msgstr "Bill of materials cannot be edited, as the part is locked"
 
@@ -9839,12 +9853,6 @@ msgstr "Salable"
 msgid "Filter by parts which are salable"
 msgstr "Filter by parts which are salable"
 
-#: src/tables/part/PartTable.tsx:274
-#: src/tables/part/PartTable.tsx:278
-#: src/tables/part/PartVariantTable.tsx:25
-msgid "Virtual"
-msgstr "Virtual"
-
 #: src/tables/part/PartTable.tsx:275
 msgid "Filter by parts which are virtual"
 msgstr "Filter by parts which are virtual"
@@ -10503,12 +10511,6 @@ msgstr "Assign to Shipment"
 #: src/tables/sales/SalesOrderAllocationTable.tsx:309
 msgid "Assign to shipment"
 msgstr "Assign to shipment"
-
-#: src/tables/sales/SalesOrderLineItemTable.tsx:139
-#: src/tables/sales/SalesOrderLineItemTable.tsx:197
-#: src/tables/sales/SalesOrderLineItemTable.tsx:214
-msgid "Virtual part"
-msgstr "Virtual part"
 
 #: src/tables/sales/SalesOrderLineItemTable.tsx:280
 #~ msgid "Allocate stock"
